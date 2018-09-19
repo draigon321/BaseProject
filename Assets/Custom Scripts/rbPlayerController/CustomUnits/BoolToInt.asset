@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: BoolToInt
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":false,"$type":"System.Boolean"},"_type":"System.Boolean","key":"condition","label":null,"summary":null,"hideLabel":true}],"valueOutputDefinitions":[{"_type":"System.Int32","key":"result","label":null,"summary":null,"hideLabel":true}],"isListening":false,"pan":{"x":116.0111,"y":2.552797},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-358.0,"y":-34.0},"guid":"9ea54038-d1de-49e2-8d68-db46dc252bac","$version":"A","$type":"Bolt.GraphInput","$id":"11"},{"defaultValues":{},"position":{"x":193.0,"y":-33.0},"guid":"fd8be37e-7ec6-467e-a8f2-271cf7ccb1cd","$version":"A","$type":"Bolt.GraphOutput","$id":"13"},{"defaultValues":{},"position":{"x":-34.0,"y":-33.0},"guid":"19ff66af-c821-43f8-a74e-a68827d30e5b","$version":"A","$type":"Bolt.SelectUnit","$id":"15"},{"type":"System.Int32","value":{"$content":1,"$type":"System.Int32"},"defaultValues":{},"position":{"x":-209.0,"y":52.0},"guid":"08f05027-87d7-4efc-821b-f0873bb3c71f","$version":"A","$type":"Bolt.Literal","$id":"17"},{"type":"System.Int32","value":{"$content":0,"$type":"System.Int32"},"defaultValues":{},"position":{"x":-176.0,"y":152.0},"guid":"13973024-4134-48cc-83b9-b62caea3895c","$version":"A","$type":"Bolt.Literal","$id":"19"},{"sourceUnit":{"$ref":"17"},"sourceKey":"output","destinationUnit":{"$ref":"15"},"destinationKey":"ifTrue","guid":"b1b4b47b-022d-428e-978d-ad893b517398","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"output","destinationUnit":{"$ref":"15"},"destinationKey":"ifFalse","guid":"12ce4de4-0618-486e-a3d9-3bfddca32647","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"condition","destinationUnit":{"$ref":"15"},"destinationKey":"condition","guid":"a5f27c17-285f-4e96-8a75-57c3e2be6837","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"selection","destinationUnit":{"$ref":"13"},"destinationKey":"result","guid":"d9fc4bfe-a2e5-4dda-922c-048e3587e762","$type":"Bolt.ValueConnection"}],"title":"Bool
+      to Int","summary":"Converts a bool to int. 0 is false, 1 is true.","$version":"A"}}'
+    _objectReferences: []

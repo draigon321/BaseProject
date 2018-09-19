@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Get Sign
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"A","label":null,"summary":null,"hideLabel":true},{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"0
+      =","label":null,"summary":"Value to give to 0","hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Single","key":"Sign","label":null,"summary":"Normalized
+      value with sign (+1/-1)","hideLabel":true}],"isListening":false,"pan":{"x":-270.0,"y":82.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":29.0,"y":-27.0},"guid":"954e71b4-43ff-4355-842e-8436aff38ce1","$version":"A","$type":"Bolt.GraphOutput","$id":"12"},{"defaultValues":{},"position":{"x":-769.0,"y":-28.0},"guid":"fdaa0640-1d9e-4c26-8168-d429e77f24dc","$version":"A","$type":"Bolt.GraphInput","$id":"14"},{"defaultValues":{},"position":{"x":-389.0,"y":-8.0},"guid":"c81a9646-f416-4380-a69d-8fd6753825cc","$version":"A","$type":"Bolt.ScalarNormalize","$id":"16"},{"type":"System.Single","value":{"$content":0.0,"$type":"System.Single"},"defaultValues":{},"position":{"x":-552.0,"y":-68.0},"guid":"1734c925-2059-466b-a072-863ae2c7f1cc","$version":"A","$type":"Bolt.Literal","$id":"18"},{"numeric":false,"defaultValues":{},"position":{"x":-391.0,"y":-127.0},"guid":"206f2c45-2c65-41c8-9a21-dfdc6f31ff76","$version":"A","$type":"Bolt.Equal","$id":"20"},{"defaultValues":{},"position":{"x":-156.0,"y":-27.0},"guid":"bb3917ed-1d58-49c2-888d-83ac05622edb","$version":"A","$type":"Bolt.SelectUnit","$id":"22"},{"defaultValues":{},"position":{"x":-388.0,"y":84.0},"guid":"3bddaf04-2058-4c4f-8b3a-b8706c59a543","$version":"A","$type":"Bolt.ScalarNormalize","$id":"24"},{"sourceUnit":{"$ref":"20"},"sourceKey":"equal","destinationUnit":{"$ref":"22"},"destinationKey":"condition","guid":"6ba37f15-1f39-4f74-b991-6e956b891a9e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"output","destinationUnit":{"$ref":"22"},"destinationKey":"ifTrue","guid":"82c8de7b-65d7-4d62-a007-c6e43577c334","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"output","destinationUnit":{"$ref":"20"},"destinationKey":"b","guid":"80ce27ac-a072-4277-a0c4-56039bfbcbe9","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"24"},"sourceKey":"output","destinationUnit":{"$ref":"22"},"destinationKey":"ifFalse","guid":"7c8b1db1-e8b7-4ce3-8fb3-555b56b35f2c","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"A","destinationUnit":{"$ref":"20"},"destinationKey":"a","guid":"493701a3-776d-4ea3-84b4-d081e07ea42c","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"A","destinationUnit":{"$ref":"24"},"destinationKey":"input","guid":"1d0960f0-cec4-4759-9fa7-540e48cf6eaa","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"0
+      =","destinationUnit":{"$ref":"16"},"destinationKey":"input","guid":"78e598de-dfc6-4c1d-b3c6-80f4073e6319","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"selection","destinationUnit":{"$ref":"12"},"destinationKey":"Sign","guid":"fb994bba-04ca-4a6b-9c50-675fb49cfeff","$type":"Bolt.ValueConnection"}],"title":"Get
+      Sign","summary":"Returns a normalized value with sign (+1/-1) from a float.","$version":"A"}}'
+    _objectReferences: []

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Negate Float
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"A","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Single","key":"~A","label":null,"summary":null,"hideLabel":false}],"isListening":false,"pan":{"x":43.0,"y":20.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-294.0,"y":-29.0},"guid":"a020e118-80ec-4dbe-81d3-e9314a6dad26","$version":"A","$type":"Bolt.GraphInput","$id":"11"},{"defaultValues":{},"position":{"x":36.0,"y":-29.0},"guid":"fe14e3d0-b65d-4977-89e8-c46484c2fad7","$version":"A","$type":"Bolt.GraphOutput","$id":"13"},{"defaultValues":{"b":{"$content":-1.0,"$type":"System.Single"}},"position":{"x":-145.0,"y":-29.0},"guid":"a633c24a-471c-4ddc-be83-ff707c26b1e6","$version":"A","$type":"Bolt.ScalarMultiply","$id":"15"},{"sourceUnit":{"$ref":"11"},"sourceKey":"A","destinationUnit":{"$ref":"15"},"destinationKey":"a","guid":"87cf336e-c9b0-4978-b5c2-32e7465c2e21","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"product","destinationUnit":{"$ref":"13"},"destinationKey":"~A","guid":"70b94ccd-7ce2-461c-802c-4c3c91794939","$type":"Bolt.ValueConnection"}],"title":"Negate
+      Float","summary":"Inverts the sign (+/-) of a non-zero float","$version":"A"}}'
+    _objectReferences: []

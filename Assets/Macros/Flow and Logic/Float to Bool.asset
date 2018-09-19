@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Float to Bool
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"A","label":null,"summary":"Any
+      float","hideLabel":true},{"hasDefaultValue":true,"defaultValue":{"$content":false,"$type":"System.Boolean"},"_type":"System.Boolean","key":"0
+      is True","label":null,"summary":"Return zero as True?","hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"X","label":null,"summary":"","hideLabel":true}],"title":"Float
+      to Bool","summary":"Returns True if the value is positive, False if its 0 or
+      negative.","pan":{"x":-101.5,"y":13.0},"zoom":1.0,"elements":[{"nest":{"source":"Macro","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":105.0,"y":-30.0},"guid":"2f76c88f-4846-496f-bdd7-e8fcf6bd5ca5","$version":"A","$type":"Bolt.GraphOutput"},{"defaultValues":{},"position":{"x":-250.0,"y":-30.0},"guid":"33a525c2-9314-47c9-80b3-747b168fb544","$version":"A","$type":"Bolt.GraphInput"}],"$version":"A"}},"defaultValues":{},"position":{"x":-529.0,"y":-51.0},"guid":"fe976137-036c-41e8-a712-d522e4a531ab","$version":"A","$type":"Bolt.SuperUnit"},{"defaultValues":{},"position":{"x":418.0,"y":-159.0},"guid":"5b54c56c-3f78-458e-9734-4b3396fb50d0","$version":"A","$type":"Bolt.GraphOutput","$id":"27"},{"defaultValues":{},"position":{"x":-364.0,"y":-176.0},"guid":"4dcbf71e-8dd7-4734-a058-a1eb3ed765c7","$version":"A","$type":"Bolt.GraphInput","$id":"29"},{"numeric":true,"defaultValues":{"b":{"$content":0.0,"$type":"System.Single"}},"position":{"x":16.0,"y":48.0},"guid":"b820451c-147d-4de5-84d3-8c4d90ae52be","$version":"A","$type":"Bolt.Greater","$id":"31"},{"defaultValues":{},"position":{"x":268.0,"y":-159.0},"guid":"cca3fb4a-e8a1-4bc9-9d4e-786dc78cc13c","$version":"A","$type":"Bolt.SelectUnit","$id":"33"},{"numeric":true,"defaultValues":{"b":{"$content":0.0,"$type":"System.Single"}},"position":{"x":17.0,"y":-84.0},"guid":"2010f709-3bd3-4f1f-868b-9178053bcd23","$version":"A","$type":"Bolt.GreaterOrEqual","$id":"35"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"0
+      =":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-176.0,"y":-39.0},"guid":"6bb665cc-2d5b-4a63-9c93-9841c8a06ed5","$version":"A","$type":"Bolt.SuperUnit","$id":"37"},{"sourceUnit":{"$ref":"29"},"sourceKey":"0
+      is True","destinationUnit":{"$ref":"33"},"destinationKey":"condition","guid":"b4460d58-88d7-4a05-a506-8b6b8650190e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"31"},"sourceKey":"comparison","destinationUnit":{"$ref":"33"},"destinationKey":"ifFalse","guid":"5d19eb32-438a-4a55-9009-1d1bca6bcf6e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"33"},"sourceKey":"selection","destinationUnit":{"$ref":"27"},"destinationKey":"X","guid":"38bcc859-bb2c-4c6b-b06f-0e60db6095f6","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"35"},"sourceKey":"comparison","destinationUnit":{"$ref":"33"},"destinationKey":"ifTrue","guid":"0d23099f-97dc-4f46-a951-b63e4bc4a6ff","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"29"},"sourceKey":"A","destinationUnit":{"$ref":"37"},"destinationKey":"A","guid":"5565a294-edf9-4143-85f2-81fdb816ee2d","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"37"},"sourceKey":"Sign","destinationUnit":{"$ref":"35"},"destinationKey":"a","guid":"ee57f1f1-c754-496e-9be1-d73197e30c49","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"37"},"sourceKey":"Sign","destinationUnit":{"$ref":"31"},"destinationKey":"a","guid":"a4620cb2-c3b1-4f65-a362-245dcd3e16bc","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: df0fe5f361aa77c4b88ac2e73e96bac2, type: 2}
