@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 1280272117}
   - component: {fileID: 1280272116}
   - component: {fileID: 1280272115}
+  - component: {fileID: 1280272121}
   - component: {fileID: 1280272120}
   - component: {fileID: 1280272119}
   m_Layer: 0
@@ -373,6 +374,17 @@ MonoBehaviour:
     _json: '{"declarations":{"collection":{"$content":[{"name":"Terrain","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1866978604}
+--- !u!114 &1280272121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1280272114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74936da1300a0034a876eba3b21888c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1866978604
 GameObject:
   m_ObjectHideFlags: 0
